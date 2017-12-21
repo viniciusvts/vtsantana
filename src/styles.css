@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+  --primary:    #DAA520;
+  --secondary:  #00645F;
+  --terciary:   #333;
+  --fonts:      #FFF;
+}
+
+body{
+  background: var(--primary);
+}
+
+h1, h2, h3, link, p, li, .nav-item, .nav-link, menu{
+  color: var(--fonts);
+}
+
+#menu{
+  background: var(--secondary);
+}
