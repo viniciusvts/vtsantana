@@ -9,6 +9,11 @@
   </ul>
 </div>
 <!--Fim do menu-->
+<div id="conteudo">
+  <app-home *ngIf="guia=='home'"> </app-home>
+  <app-projetos *ngIf="guia=='proj'"> </app-projetos>
+</div>
+<!--Fim do conteúdo-->
 <div id="rodape">
   <ul class="nav justify-content-center">
     <li class="nav-item">
