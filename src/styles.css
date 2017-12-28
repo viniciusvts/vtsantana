@@ -13,12 +13,21 @@ body{
 #head1, #foot1{
   background: var(--secondary);
   z-index: 999;
+  position: fixed;
+  width: 100%
+}
+#head1{
+  top: 0;
+  left: 0;
 }
 #foot1{
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
+    bottom: 0;
+    left: 0;
     height: 40px;
+}
+#conteudo{
+  position: relative;
+  top: 40px;
 }
 #hometitle{
   font-family: 'PT Mono', monospace;
