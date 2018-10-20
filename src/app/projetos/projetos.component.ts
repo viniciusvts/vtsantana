@@ -1,6 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
-import { Observable } from 'rxjs/Observable';
 import { Projeto } from '../../assets/Projeto';
 import { AppService } from '../app.service';
 
@@ -20,9 +19,7 @@ export class ProjetosComponent implements OnInit {
     this._projQry.getProjects()
       .subscribe((data: Projeto[]) => this.projs = data,
       error => console.log(error));
-  }
-
-  ngOnInit() {
+*/
   }
 
 }
