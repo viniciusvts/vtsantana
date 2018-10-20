@@ -1,19 +1,26 @@
 <div id=head1>
   <ul class="nav nav-tabs">
     <li class="nav-item">
-      <a class="nav-link" [class.active]="guia=='home'" (click)="guia='home'" href="#">Home</a>
+      <a class="nav-link" [class.active]="isGuia(pagina.Home)" (click)="setGuia(pagina.Home)" href="#">
+        Home
+      </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" [class.active]="guia=='proj'" (click)="guia='proj'" href="#">Projetos</a>
+      <a class="nav-link" [class.active]="isGuia(pagina.Proj)" (click)="setGuia(pagina.Proj)" href="#">
+        Projetos
+      </a>
     </li>
   </ul>
 </div>
 <!--Fim do menu-->
+
+<!--Inicio do conteúdo-->
 <div id="conteudo">
-  <app-home *ngIf="guia=='home'"> </app-home>
-  <app-projetos *ngIf="guia=='proj'"> </app-projetos>
+  <app-home *ngIf="isGuia(pagina.Home)"> </app-home>
+  <app-projetos *ngIf="isGuia(pagina.Proj)"> </app-projetos>
 </div>
 <!--Fim do conteúdo-->
+
 <div id="foot1">
   <ul class="nav justify-content-center">
     <li class="nav-item">
