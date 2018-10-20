@@ -1,14 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css?family=PT+Mono');
 :root{
-  --primary:    #DAA520;
-  --secondary:  #00645F;
+  --primary:    #DAA520 !important;
+  --secondary:  #00645F !important;
   --terciary:   #333;
   --fonts:      #FFF;
 }
 
 body{
-  background: var(--primary);
+  background: var(--primary) !important;
 }
 #head1, #foot1{
   background: var(--secondary);
