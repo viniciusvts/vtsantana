@@ -35,6 +35,9 @@ body{
   margin: 5%;
   text-align: center;
 }
+#hometitle:hover{
+  filter: invert(100%);
+}
 #homeimagelinks{
   width: 200px;
   height: 200px;
@@ -43,6 +46,9 @@ body{
 .img{
   margin: 10px;
   width: 75px;
+}
+.img:hover{
+  filter: invert(100%);
 }
 h1, h2, .nav-link, a, a:hover{
   color: var(--fonts);
